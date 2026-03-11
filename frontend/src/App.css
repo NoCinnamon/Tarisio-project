@@ -1,0 +1,139 @@
+/* Base Layout */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+h1 { color: #2c3e50; margin-bottom: 5px; }
+p { color: #7f8c8d; margin-bottom: 25px; }
+
+/* Input Styling */
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 0.3s;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Button Styling */
+.actions { margin: 20px 0; }
+
+button {
+  background-color: #2c3e50;
+  color: white;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+}
+
+button:hover { background-color: #34495e; }
+button:active { transform: scale(0.98); }
+button:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+
+/* Results Section */
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fcfcfc;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.results h2 { 
+  margin-top: 0;
+  color: #c0392b; 
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 10px;
+}
+
+.flag {
+  color: #e74c3c;
+  background-color: #fdf2f2; /* Ensure the # has its color code and a semicolon */
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  list-style: none;
+  font-weight: 500;
+} /* <--- Make sure this closing brace exists! */
+
+.summary-text {
+  line-height: 1.6;
+  color: #34495e;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+  font-style: italic;
+} /* <--- And this one too! */
+
+
+/* Add/Update these in App.css */
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #34495e;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.risk-badge {
+  background: #c0392b;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Make the title stand out */
+h1 {
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #1a1a1a;
+}
